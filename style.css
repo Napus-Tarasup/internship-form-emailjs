@@ -1,0 +1,53 @@
+@font-face {
+    font-family: ChakraPetch-Regular;
+    src: url(ChakraPetch-Regular.ttf);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    font-family: ChakraPetch-Regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+#container{
+    text-align: center;
+}
+form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 90%;
+}
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #ececec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ccc;
+}
+

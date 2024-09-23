@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>กรอกข้อมูลสมัครฝึกงาน</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "3s5t0bvS-XTsR_SJy",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>กรอกข้อมูลสมัครฝึกงาน</h1>
+      <form id="webForm">
+        <label for="fname">กรุณากรอกชื่อจริง</label>
+        <input type="text" name="fname" id="fname" required />
+
+        <label for="lname">กรุณากรอกนามสกุล</label>
+        <input type="text" name="lname" id="lname" required />
+
+        <label for="email">กรุณากรอก email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="resume">กรุณาแนบ resume (ไฟล์ pdf เท่านั้น)</label>
+        <input type="file" name="resume" id="resume" accept=".pdf" required />
+
+        <button type="submit">ส่งแบบฟอร์มสมัครฝึกงาน</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
